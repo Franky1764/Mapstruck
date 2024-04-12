@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center; 
+    background-color: azure; 
+}
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: navy;}
+p {
+    color: #333;
+    text-align: justify;
+    margin: auto;
+    width: 60%;
+}
+
+.card {
+    font-family: Arial, sans-serif;
+    text-align:center;
+    margin: auto;
+    width: 80%;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
