@@ -12,6 +12,8 @@
 <br>
 <br>
 	<h1>Contáctanos</h1><br>
+
+    <!--Formulario de contacto - se encuentra -->
 	<div class="contact">
 	<form id="contact" method="post" action="contact.php">
 		<label><b>Nombre</b></label><br>
@@ -25,6 +27,20 @@
 		<input type="submit" name="submit" id="submit" value="Enviar Mensaje">
 	</form>
 	</div>
+
+    <!--Se incluye validador en JS-->
+    <script>
+        function validateForm() {
+            var email = document.getElementById("Email").value;
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("Por favor, ingrese una dirección de correo electrónico válida.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+
 </body>
 </html>
        
