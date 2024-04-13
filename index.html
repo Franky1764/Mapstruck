@@ -56,25 +56,53 @@
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Log In</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Log In</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <label><b>Email</b></label><br>
+                                <input type="email" name="Email" id="Email" placeholder="ejemplo@email.com" required><br><br>
+                                <label><b>Contraseña</b></label><br>
+                                <input type="password" name="Password" id="Password" placeholder="Contraseña" required><br><br>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-outline-danger" onclick="validateLogin()">Iniciar Sesión</button>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            
-                            <label><b>Email</b></label><br>
-                            <input type="email" name="Email" id="Email" placeholder="ejemplo@email.com" required><br><br>
-                            <label><b>Contraseña</b></label><br>
-                            <input type="text" name="Password" id="Password" placeholder="Password" required><br><br>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-outline-danger">Iniciar Sesión</button>
-                        </div>
-                    </div>
                     </div>
                 </div>
+
+<script>
+    function validateLogin() {
+        var email = document.getElementById("Email").value;
+        var password = document.getElementById("Password").value;
+
+        // Expresión regular para validar formato de email
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        // Expresión regular para validar longitud de contraseña (mínimo 8 caracteres)
+        var passwordPattern = /^.{8,}$/;
+
+        // Validación de email y contraseña
+        if (!emailPattern.test(email)) {
+            alert("Por favor, ingrese una dirección de correo electrónico válida.");
+            return;
+        }
+
+        if (!passwordPattern.test(password)) {
+            alert("La contraseña debe tener al menos 8 caracteres.");
+            return;
+        }
+
+        // Si la validación pasa, puedes enviar el formulario o realizar otras acciones aquí
+        alert("Inicio de sesión exitoso");
+        // Aquí puedes añadir código para enviar el formulario o redirigir a otra página
+    }
+</script>
+
                 </form>
             </div>
         </div>
