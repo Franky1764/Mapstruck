@@ -1,11 +1,18 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center; 
-    background-color: azure; 
+    background-color: whitesmoke; 
 }
-h3 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: navy;}
+
+h1 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #79242f;
+}
+
+h4 {
+    color:#79242f
+}
+
 p {
     color: #333;
     text-align: justify;
@@ -13,15 +20,24 @@ p {
     width: 80%;
 }
 
+
 .card {
     font-family: Arial, sans-serif;
-    text-align:center;
+    text-align: center;
     margin: auto;
-    width: 80%;
+    margin-bottom: 30px; /* Espacio entre tarjetas*/
+    max-width: 400px; /* Ancho máximo de la tarjeta */
 }
 
 .card-img-top {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 200px; /* Altura fija o proporcional para las imágenes */
+    object-fit: contain; /* Cambiado a contain para mantener la relación de aspecto*/
+}
+
+.card-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;/*esto hace que nuestras tarjetas cambien de posición de acuerdo al espacio*/
+    margin-bottom: 20px;
 }
