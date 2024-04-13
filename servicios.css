@@ -1,3 +1,7 @@
+header{
+    background-color: #79242f;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: whitesmoke; 
@@ -40,4 +44,28 @@ p {
     justify-content: center;
     flex-wrap: wrap;/*esto hace que nuestras tarjetas cambien de posición de acuerdo al espacio*/
     margin-bottom: 20px;
+}
+
+#Menu li > a {
+    font-size: 16px;
+    font-weight: bold;
+    color:#79242f
+}
+
+#Menu form > ::placeholder{
+    font-size: 14px;
+}
+
+#Menu form > button{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header > p{
+    color:white
+}
+
+nav{
+    background-color: whitesmoke;
+    color:#79242f;
 }
