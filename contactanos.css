@@ -1,3 +1,24 @@
+#Menu li > a {
+    font-size: 16px;
+    font-weight: bold;
+    color:#79242f
+}
+
+#Menu form > ::placeholder{
+    font-size: 14px;
+}
+
+#Menu form > button{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav{
+    background-color: whitesmoke;
+    color:#79242f;
+}
+
+
 body {
 	margin: 0;
 	padding: 0;
@@ -5,7 +26,7 @@ body {
 	font-family: 'Arial';
 }
 .contact{
-	width: 382px;
+	width: 480px;
 	overflow: hidden;
 	margin: auto;
 	margin: 20 0 0 450px;
