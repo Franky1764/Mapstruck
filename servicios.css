@@ -10,7 +10,7 @@ p {
     color: #333;
     text-align: justify;
     margin: auto;
-    width: 60%;
+    width: 80%;
 }
 
 .card {
@@ -18,13 +18,6 @@ p {
     text-align:center;
     margin: auto;
     width: 80%;
-}
-
-.pcard{
-    font-family: Arial, sans-serif;
-    text-align: justify;
-    margin: auto;
-    width:100%;
 }
 
 .card-img-top {
