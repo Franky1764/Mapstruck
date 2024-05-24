@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,z<a initial-scale=1">
     <title>MapsTruck</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -12,7 +12,6 @@
 <body>
     <!--Encabezado-->
     <header class="container-fluid d-flex justify-content-center">
-        <p class="text mb-0 padding -2 fs-6">Contáctanos (+56) 9 25 25 25 2</p>
     </header>
 
     <!--Barra de navegación inicial-->
@@ -35,8 +34,8 @@
                         <a class="nav-link" href="./codigo/Nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="./codigo/Servicios.html">Servicios</a>
-                  </li>
+                    <a class="nav-link" href="./codigo/Servicios.html">Servicios</a>
+                </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="./codigo/Formulariocontacto.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Contáctanos
@@ -44,13 +43,14 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="./codigo/Formulariocontacto.html">Formulario de Contacto</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Descarga nuestra App</a></li>
+                            <li><a class="dropdown-item" href="./codigo/RegistroProveedores.html">Trabaja con nosotros</a></li>
                         </ul>
                     </li>
                 </ul>
+
                 <!-- Botón para Iniciar Modal -->
                 <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Iniciar Sesión
+                    Log In Usuario
                 </button>
                 
                 <!-- Modal -->
@@ -74,61 +74,43 @@
                         </div>
                     </div>
                 </div>
-
-<script>
-    function validateLogin() {
-        var email = document.getElementById("Email").value;
-        var password = document.getElementById("Password").value;
-
-       
-        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        // )
-        var passwordPattern = /^.{8,}$/;
-
-        // Validación de email y contraseña
-        if (!emailPattern.test(email)) {
-            alert("Por favor, ingrese una dirección de correo electrónico válida.");
-            return;
-        }
-
-        if (!passwordPattern.test(password)) {
-            alert("La contraseña debe tener al menos 8 caracteres.");
-            return;
-        }
-
-        alert("Inicio de sesión exitoso");
-
-    }
-</script>
-
                 </form>
             </div>
         </div>
     </nav>
+    
 
-    <div class="container-fluid col text-center">
-        <!--Carrusel inicial-->
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="./img/grua.png" class="d-block w-100" alt="grua1">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="./img/grua4.png" class="d-block w-100" alt="grua2">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="./img/gruas1.png" class="d-block w-100" alt="grua3">
-                </div>
+        
+<!--Carrusel inicial-->
+<section>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./img/grua.png" class="d-block" style="width: 100%; height: auto;" alt="grua1">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/grua4.png" class="d-block" style="width: 100%; height: auto;" alt="grua2">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/gruas1.png" class="d-block" style="width: 100%; height: auto;" alt="grua3">
             </div>
         </div>
-      </div>
+    </div>
+</section> 
+
+    
         <!--Inicio de las secciones-->
         <section class="w-50 mx-auto text-center pt-3" id="intro">
-            <h1 class="p-3 fs-2 border-top-3">Una Empresa única para todas tus <span class="text-danger-emphasis"> Necesidades en Ruta</span></h1>
-            <p><span class="text-danger-emphasis">En MapsTruck</span> Estamos aquí para ayudarte en tu camino. Ya sea que necesites una grúa para tu vehículo, una mano amiga en la carretera o simplemente información sobre tu ruta, estamos a tu disposición.
+            <div>
+                <h1 class="p-3 fs-2 border-top-3">Una Empresa única para todas tus <span class="text-danger-emphasis"> Necesidades en Ruta</span></h1>
+            </div>
+            <div>
+                <p><span class="text-danger-emphasis">En MapsTruck</span> Estamos aquí para ayudarte en tu camino. Ya sea que necesites una grúa para tu vehículo, una mano amiga en la carretera o simplemente información sobre tu ruta, estamos a tu disposición.</p>
+            </div>
                 <br><br>
-                Confía en nosotros para hacer que tu viaje sea más seguro y sin preocupaciones. ¡Estamos listos para ayudarte a llegar a donde necesitas ir!</p>
+            <div>
+                <p>Confía en nosotros para hacer que tu viaje sea más seguro y sin preocupaciones. ¡Estamos listos para ayudarte a llegar a donde necesitas ir!</p>
+            </div>
         </section>
 
         <div>
@@ -136,13 +118,34 @@
         </div>
     
     <footer class ="w-100 d-flex align-items justify-content-center flex-wrap">
-      <div id="iconos">
+    <div id="iconos">
         <a href="#"><i class="bi bi-whatsapp"></i></a>
         <a href="#"><i class="bi bi-facebook"></i></a>
         <a href="#"><i class="bi bi-twitter-x"></i></a>
-      </div>
+    </div>
     </footer>
-   
-</body>
+<script>
+
+    function validateLogin() {
+        var email = document.getElementById("Email").value;
+        var password = document.getElementById("Password").value;
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        
+        var passwordPattern = /^.{8,}$/;
+        // Validación de email y contraseña
+        if (!emailPattern.test(email)) {
+            alert("Por favor, ingrese una dirección de correo electrónico válida.");
+            return;
+        }
+        if (!passwordPattern.test(password)) {
+            alert("La contraseña debe tener al menos 8 caracteres.");
+            return;
+        }
+        alert("Inicio de sesión exitoso");
+    }
+</script>
 <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
 </html>
