@@ -87,3 +87,6 @@ label{
 	padding-left: 7px;
 	color: #79242f;
 }
+
+.contact input[type="checkbox"] {
+	color: whitesmoke;}
