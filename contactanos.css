@@ -90,3 +90,43 @@ label{
 
 .contact input[type="checkbox"] {
 	color: whitesmoke;}
+
+
+.vehicle-form {
+	max-width: 600px;
+	margin: 50px auto;
+	padding: 30px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	background-color: #79242f;
+}
+
+.vehicle-form h2 {
+	color: #79242f
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.vehicle-form label {
+	font-weight: bold;
+}
+
+.vehicle-form .form-group {
+	margin-bottom: 15px;
+}
+
+.vehicle-form button {
+	background-color: #001f3f; /* Navy */
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+}
+
+.vehicle-form button:disabled {
+	background-color: #d3d3d3; /* Gris claro */
+	color: #a9a9a9; /* Gris oscuro */
+	cursor: not-allowed;
+	}
